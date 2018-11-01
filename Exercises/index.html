@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+    <head>
+        <title>Exercícios</title>
+        <meta charset="UTF-8"/>
+        <script type="text/javascript" src="functions.js"></script>
+    </head>
+    <body>
+        <h2>Exercício 1</h2>
+        <p>Leia um valor e imprima os resultados: “É maior que 10” ou “Não é maior que 10” ou ainda “É igual a 10”</p>
+        <form name="exercise_1_form">
+            Valor:<br>
+            <input type="text" name="value_input" value="10">
+            <br><br>
+            <input type="button" value="Submit", onclick="executeExercise1(exercise_1_form.value_input.value)">
+        </form> 
+        <p id="exercise_1_result"></p>
+        
+        <h2>Exercício 2</h2>
+        <p>Some dois valores lidos e imprima o resultado</p>
+        <form name="exercise_2_form">
+            Valor 1:<br>
+            <input type="text" name="value1_input" value="10">
+            <br><br>
+            Valor 2:<br>
+            <input type="text" name="value2_input" value="10">
+            <br><br>
+            <input type="button" value="Submit", onclick="executeExercise2(exercise_2_form.value1_input.value, exercise_2_form.value2_input.value)">
+        </form> 
+        <p id="exercise_2_result"></p>
+        
+        <h2>Exercício 3</h2>
+        <p>Leia 2 valores e a operação a ser realizada (+, -, * ou /) e imprima o resultado (use um switch)</p>
+        <form name="exercise_3_form">
+            Valor 1:<br>
+            <input type="text" name="value1_input" value="10">
+            <br><br>
+            Valor 2:<br>
+            <input type="text" name="value2_input" value="10">
+            <br><br>
+            <select name="operator_select">
+                <option value="sum">Soma (+)</option>
+                <option value="subtraction">Subtração (-)</option>
+                <option value="multiplication">Multiplicação (*)</option>
+                <option value= "division">Divisão (/)</option>
+            </select>
+            <br><br>
+            <input type="button" value="Submit", onclick="executeExercise3(exercise_3_form.value1_input.value, exercise_3_form.value2_input.value, exercise_3_form.operator_select.value)">
+        </form> 
+        <p id="exercise_3_result"></p>
+        
+        <h2>Exercício 4</h2>
+        <p>Leia um nome e um valor n e imprima o nome n vezes usando o laço for</p>
+        <form name="exercise_4_form">
+            Valor 1:<br>
+            <input type="text" name="value1_input" value="João">
+            <br><br>
+            Valor 2:<br>
+            <input type="text" name="value2_input" value="10">
+            <br><br>
+            <input type="button" value="Submit", onclick="executeExercise4(exercise_4_form.value1_input.value, exercise_4_form.value2_input.value)">
+        </form> 
+        <p id="exercise_4_result"></p>
+        
+        <h2>Exercício 5</h2>
+        <p>Que tipo de triângulo é esse?</p>
+        <form name="exercise_5_form">
+            Lado 1:<br>
+            <input type="text" name="value1_input" value="10">
+            <br><br>
+            Lado 2:<br>
+            <input type="text" name="value2_input" value="10">
+            <br><br>
+            Lado 3:<br>
+            <input type="text" name="value3_input" value="10">
+            <br><br>
+            <input type="button" value="Submit", onclick="executeExercise5(exercise_5_form.value1_input.value, exercise_5_form.value2_input.value, exercise_5_form.value3_input.value)">
+        </form> 
+        <p id="exercise_5_result"></p>
+        
+        <h2>Exercício 6</h2>
+        <p>Qual o valor dessa conta de energia?</p>
+        <form name="exercise_6_form">
+            Quantidade de KWh:<br>
+            <input type="text" name="value1_input" value="10">
+            <br><br>
+            Preço por KWh:<br>
+            <input type="text" name="value2_input" value="2.50">
+            <br><br>
+            <input type="button" value="Submit", onclick="executeExercise6(exercise_6_form.value1_input.value, exercise_6_form.value2_input.value)">
+        </form> 
+        <p id="exercise_6_result"></p>
+    </body>
+</html>
