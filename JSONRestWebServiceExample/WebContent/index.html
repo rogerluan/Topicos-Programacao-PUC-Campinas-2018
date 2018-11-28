@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+	<title>Donations</title>
+	<script type="text/javascript" src="validations.js"></script>
+</head>
+<body>
+
+<h2>Donations</h2>
+<p>Please enter the information about your donation</p>
+<form name="donation_form" action="donations" method="POST">
+	<label>Title:</label><br>
+    <input type="text" name="title_input" value="test" required>
+    <br><br>
+    <label>Description:</label><br>
+    <input type="text" name="description_input" value="test">
+    <br><br>
+    <label>Contact:</label><br>
+    <input type="text" name="contact_input" value="test">
+    <br><br>
+    <label>City:</label><br>
+    <input type="text" name="city_input" value="test" required>
+    <br><br>
+    <label>State:</label><br>
+    <input type="text" name="state_input" value="SP" required>
+    <br><br>
+    <label>Address:</label><br>
+    <input type="text" name="address_input" value="test">
+    <br><br>
+    <input type="submit" value="Submit" onSubmit="return validateDonationForm();">
+</form> 
+
+<p id="donation_result_section"></p>
+
+</body>
+</html>
