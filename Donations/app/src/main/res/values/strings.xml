@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Donations</string>
+    <string name="date_formatting_yesterday_time">Yesterday %1$s</string>
+    <string name="date_formatting_tomorrow_time">Tomorrow %1$s</string>
+</resources>
